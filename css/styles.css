@@ -1,0 +1,64 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: "Oxygen", sans-serif;
+}
+
+.d-flex {
+    margin-left: 80px;
+}
+
+#header-nav {
+    background-color: #f6b319; /* Yellow */
+    border-radius: 0 ;
+    border: 0 ; 
+}
+#David {
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-right: px;
+}
+
+#logo-img {
+    background: url('../images/logo.png') no-repeat center;
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    background-size: contain; /* Ensure the logo scales properly */
+    max-width: 100%; /* Prevent the logo from exceeding the navbar width */
+    max-height: 100%;
+    margin: 10px 15px 10px -40px;
+}
+#kosher-cert {
+    width: 50px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between the image and text */
+    margin-left: -15px;
+    vertical-align: middle; /* Aligns the image vertically with the text */
+}
+
+.navbar-brand {
+    padding-top: 25px;
+    
+}
+.navbar-brand h1 {
+    font-family: "Lora", serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: .75;
+}
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.navbar-brand span {
+    vertical-align: middle;
+}
