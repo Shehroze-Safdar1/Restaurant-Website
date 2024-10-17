@@ -106,18 +106,39 @@ body {
     background-color: transparent;
     color: maroon;
 }
+/* Home Page */
+
+.jumbotron {
+    background: url(../images/jumbotron-768.jpg) no-repeat;
+    height: 500px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
 
 /*Media Queries*/
 
 /* Large Devices */
 @media (min-width:1200px) {
-    #logo-img {
-        background: url('../images/logo.png') no-repeat center;
-        width: 150px;
-        height: 150px;
-        background-size: contain;
-        margin-right: 25px;  /* Less space between logo and text */
-        margin-left: -30px;  /* Move logo further to the left */
+    .jumbotron {
+        background: url(../images/jumbotron-1200.jpg) no-repeat;
+        height: 700px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
     }
 
 }
@@ -126,14 +147,56 @@ body {
 @media (min-width:992px) and (max-width:1199px) {
     #logo-img {
         background: url('../images/logo.png') no-repeat center;
-        width: 80px; /* Adjusted logo size */
-        height: 80px; /* Maintain aspect ratio */
+        width: 150px;
+        height: 150px;
         background-size: contain;
-        margin-right: 20px; /* Adjusted space */
-        margin-left: -20px; /* Adjusted space */
+        margin-right: 25px;  /* Less space between logo and text */
+        margin-left: -30px;  /* Move logo further to the left */
+    }
+    .jumbotron {
+        background: url(../images/jumbotron-992.jpg) no-repeat;
+        height: 600px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
     }
 
 }
-  
 
+/* Small Device */
+@media (min-width:768px) and (max-width:991px) {
+    #logo-img {
+        background: url('../images/logo.png') no-repeat center;
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+        margin-right: 15px;  /* Less space between logo and text */
+        margin-left: -45px;  /* Move logo further to the left */
+    }
+    .jumbotron {
+        background: url(../images/jumbotron-768.jpg) no-repeat;
+        height: 500px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+#call-btn {
+    background-color: #f6b319; /* Match navbar color */
+    text-align: center;
+    margin: 5px 5px 5px 5px; 
+    padding: 10px 0; /* Padding for a balanced look */
+    position: relative; /* Ensure it doesn’t overlap other elements */
+    border: 2px solid #fff;
+}
+
+#call-btn a {
+    color: #fff; /* White text for contrast */
+    font-size: 1.2rem; /* Adjust font size */
+    text-decoration: none;
+    display: block; /* Ensure the anchor takes full width */
+    width: 100%; /* Full width inside the button */
+}
 
