@@ -1,3 +1,4 @@
+/* Body and General Styles */
 body {
     font-size: 16px;
     color: #fff;
@@ -5,42 +6,35 @@ body {
     font-family: "Oxygen", sans-serif;
 }
 
-.d-flex {
-    margin-left: 80px;
-}
-
-#header-nav {
-    background-color: #f6b319; /* Yellow */
-    border-radius: 0 ;
-    border: 0 ; 
-}
-#David {
-    margin-top: 20px;
-    margin-left: -20px;
-    margin-right: px;
-}
-
+/* Adjust Logo Alignment to the Left */
 #logo-img {
     background: url('../images/logo.png') no-repeat center;
-    width: 150px; /* Set your desired width */
-    height: 150px; /* Set your desired height */
-    background-size: contain; /* Ensure the logo scales properly */
-    max-width: 100%; /* Prevent the logo from exceeding the navbar width */
-    max-height: 100%;
-    margin: 10px 15px 10px -40px;
-}
-#kosher-cert {
-    width: 50px; /* Adjust width as necessary */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5px; /* Space between the image and text */
-    margin-left: -15px;
-    vertical-align: middle; /* Aligns the image vertically with the text */
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    margin-right: 25px;  /* Less space between logo and text */
+    margin-left: -70px;  /* Move logo further to the left */
 }
 
-.navbar-brand {
-    padding-top: 25px;
-    
+/* Navbar Styles */
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
 }
+
+/* Navbar Brand Alignment */
+.navbar-brand {
+    padding-top: 15px; /* Adjusts vertical alignment */
+    margin-left: -20px; /* Shift the brand section to the left */
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+}
+
+/* Styling for h1 (Title) */
 .navbar-brand h1 {
     font-family: "Lora", serif;
     color: #557c3e;
@@ -48,17 +42,98 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 1px 1px 1px #222;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: .75;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    line-height: 0.75;
 }
+
+/* Kosher Certification Image Alignment */
+#kosher-cert {
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 10px; /* Shifts the Kosher image slightly left */
+    vertical-align: middle;
+}
+
+/* Paragraph for Kosher Certification */
 .navbar-brand p {
     color: #000;
     text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
+    font-size: 0.7em;
+    margin-top: 10px; /* Adjust for better spacing */
     font-weight: bold;
 }
+
+/* Ensure Text and Icons Align Properly */
 .navbar-brand span {
     vertical-align: middle;
 }
+.fa {
+    font-size: 1.5em; /* Ensure all icons are the same size */
+    vertical-align: middle; /* Aligns the icon with text */
+}
+.nav-item {
+    margin-top: -60px; /* Adjust the value as needed */
+}
+#nav-list
+{
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+#nav-list a {
+    color: #951C49;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#phone {
+    margin-left: 70px;
+    color: #557c3e;
+    text-align: right;
+    
+}
+
+.custom-toggler {
+    border: 2px solid maroon;
+    background-color: transparent;
+    color: maroon;
+}
+
+/*Media Queries*/
+
+/* Large Devices */
+@media (min-width:1200px) {
+    #logo-img {
+        background: url('../images/logo.png') no-repeat center;
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+        margin-right: 25px;  /* Less space between logo and text */
+        margin-left: -30px;  /* Move logo further to the left */
+    }
+
+}
+
+/* Medium Devices */
+@media (min-width:992px) and (max-width:1199px) {
+    #logo-img {
+        background: url('../images/logo.png') no-repeat center;
+        width: 80px; /* Adjusted logo size */
+        height: 80px; /* Maintain aspect ratio */
+        background-size: contain;
+        margin-right: 20px; /* Adjusted space */
+        margin-left: -20px; /* Adjusted space */
+    }
+
+}
+  
+
+
