@@ -186,7 +186,44 @@ body {
     background-color: #000;
     color: #fff;
     opacity: .8;
+}/* End of Home Page */
+
+
+/* ******************Start of Menu Categories Page***************** */
+
+
+.category-tile {
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: px;
+    margin: 0 auto 15px;
 }
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+    margin-bottom: 50px;
+}
+
+
+
 
 /*Media Queries*/
 
@@ -228,7 +265,7 @@ body {
         height: 80px;
         background-size: contain;
         margin-right: 15px;  /* Less space between logo and text */
-        margin-left: -45px;  /* Move logo further to the left */
+        margin-left: -30px;  /* Move logo further to the left */
     }
     .jumbotron {
         background: url(../images/jumbotron-768.jpg) no-repeat;
@@ -268,6 +305,14 @@ body {
 
     footer section hr {
         width: 50%;
+    }
+    #call-btn {
+        background-color: #f6b319; /* Match navbar color */
+        text-align: center;
+        margin: 2.5px; 
+        padding: 5px 0; /* Padding for a balanced look */
+        position: relative; /* Ensure it doesn’t overlap other elements */
+        border: 2px solid #fff;
     }
 }
 
